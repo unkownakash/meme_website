@@ -1,0 +1,87 @@
+#mainoo {
+    display: block;
+    font-family: Georgia, serif;
+    /* background-color: whitesmoke; */
+    
+    padding: 10px;
+}
+
+#box1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif; /* Changed the font family to Arial */
+    font-weight: bold; /* Makes the font bold */
+    padding-top: 20px;
+}
+
+
+#box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    flex-wrap: wrap; /* Makes the layout responsive */
+    gap: 20px; /* Adds spacing between items */
+}
+
+#step1 {
+    height: max-content;
+    background-color: white;
+    width: 450px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+#step1:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.blu {
+    color: skyblue;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.bot {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #box1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    #box2 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #step1 {
+        width: 90%; /* Make cards take most of the screen width on smaller devices */
+        margin: 0 auto; /* Center the cards */
+    }
+}
+
+@media (max-width: 480px) {
+    #box1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    #step1 {
+        width: 100%; /* Allow cards to take full width */
+    }
+}
